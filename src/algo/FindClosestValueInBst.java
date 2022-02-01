@@ -1,6 +1,7 @@
 package algo;
 
-import static org.junit.Assert.assertEquals;
+import org.junit.jupiter.api.Assertions;
+
 
 public class FindClosestValueInBst {
     public static int findClosestValueInBst(BST tree, int target) {
@@ -46,7 +47,7 @@ public class FindClosestValueInBst {
 
         var expected = 13;
         var actual = FindClosestValueInBst.findClosestValueInBst(root, 12);
-       assertEquals(expected, actual);
+       Assertions.assertEquals(expected, actual);
         if(expected == actual){
             System.out.println(actual);
         }else{
