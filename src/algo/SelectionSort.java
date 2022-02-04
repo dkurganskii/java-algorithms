@@ -2,6 +2,8 @@ package algo;
 
 import java.util.Arrays;
 
+// O(n^2) time, O(1) space
+
 public class SelectionSort {
     public static int[] selectionSort(int[] array) {
         int startIdx = 0;
@@ -21,7 +23,7 @@ public class SelectionSort {
     }
 
     public static void main(String[] args) {
-        int[] arr = {3,4,1};
+        int[] arr = {2,3,4,1};
         System.out.println(Arrays.toString(selectionSort(arr)));
     }
 }
