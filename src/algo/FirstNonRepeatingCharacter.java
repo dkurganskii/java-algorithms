@@ -5,15 +5,15 @@ package algo;
 import java.util.HashMap;
 
 public class FirstNonRepeatingCharacter {
-    public static int firstNonRepeatingCharacter(String str){
+    public static int firstNonRepeatingCharacter(String str) {
         HashMap<Character, Integer> characterFrequencies = new HashMap<>();
-        for (int i = 0; i<str.length(); i++){
+        for (int i = 0; i < str.length(); i++) {
             char character = str.charAt(i);
-            characterFrequencies.put(character, characterFrequencies.getOrDefault(character, 0) +1);
+            characterFrequencies.put(character, characterFrequencies.getOrDefault(character, 0) + 1);
         }
-        for (int i = 0; i< str.length(); i++){
+        for (int i = 0; i < str.length(); i++) {
             char character = str.charAt(i);
-            if (characterFrequencies.get(character) == 1){
+            if (characterFrequencies.get(character) == 1) {
                 return i;
             }
         }
